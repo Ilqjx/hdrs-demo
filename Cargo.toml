@@ -1,0 +1,14 @@
+[package]
+name = "hdrs-demo"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+hdfs-sys = { version = "0.2.0", features = ["hdfs_3_3"] }
+hdrs = "0.1.4"
+opendal = { version = "0.11.0", features = ["services-hdfs"] }
+tokio = { version = "1.20.0", features = ["full"] }
+anyhow = "1.0.58"
+log = "0.4.17"
+uuid = { version = "1.0.0", features = ["serde", "v4"] }
+env_logger = "0.9.0"
